@@ -9,11 +9,14 @@
       <title>Etherparty</title>
       <!-- Vendor CSS -->
       <link href="vendors/animate-css/animate.min.css" rel="stylesheet">
-       <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
       <!-- CSS -->
       <link href="css/app.min.css" rel="stylesheet">
       <!-- Following CSS codes are used only fore demo purposes thus you can remove anytime -->
       <style type="text/css">
+         body {
+         background-image: url("./img/plans/background.png");
+         }
          .dropdown-basic-demo {
          display: inline-block;
          margin: 0 15px 20px 0;
@@ -48,7 +51,7 @@
          }
       </style>
    </head>
-   <body>
+   <body style="">
       <header id="header">
          <ul class="header-inner">
             <li id="menu-trigger" data-trigger="#sidebar">
@@ -89,29 +92,26 @@
             <div class="sidebar-inner">
                <div class="si-inner">
                   <div class="profile-menu">
-                            <a href="">
-                                <div class="profile-pic">
-                                    <h4 style="color:#fff; font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size:
-                                            12px;">Account <br></h4> 
-                                   <p style=" color: #8890AD; font-size: 10px;">3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy</p>
-                                </div>
-                                
-                                <div class="profile-info">
-                                    Account Actions
-                                    
-                                    <i class="md md-arrow-drop-down"></i>
-                                </div>
-                            </a>
-                            
-                            <ul class="main-menu">
-                                <li>
-                                    <a href="profile.html"><i class="md md-person"></i> View Profile</a>
-                                </li>
-                                <li>
-                                    <a href="./login.html"><i class="md md-history"></i> Logout</a>
-                                </li>
-                            </ul>
+                     <a href="">
+                        <div class="profile-pic">
+                           <h4 style="color:#fff; font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size:
+                              12px;">Account <br></h4>
+                           <p style=" color: #8890AD; font-size: 10px;">3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy</p>
                         </div>
+                        <div class="profile-info">
+                           Account Actions
+                           <i class="md md-arrow-drop-down"></i>
+                        </div>
+                     </a>
+                     <ul class="main-menu">
+                        <li>
+                           <a href="profile.html"><i class="md md-person"></i> View Profile</a>
+                        </li>
+                        <li>
+                           <a href="./login.html"><i class="md md-history"></i> Logout</a>
+                        </li>
+                     </ul>
+                  </div>
                   <ul class="main-menu">
                      <li><a href="index.html"><i class="md md-dashboard"></i> Dashboard</a></li>
                      <li><a href="create.html"><i class="md md-blur-on"></i> Create Contract</a></li>
@@ -226,179 +226,208 @@
                <div class="block-header">
                   <h2>Pricing</h2>
                </div>
-                <div class="col-sm-4">                                              
-                     <!--Starter -->
-                        <div class="card profile-view">
-                            <div class="pv-header" style="background:#55b070;">
-                                <img src="img/plans/starter.png" class="pv-main" alt="">
-                            </div>
-                            
-                            <div class="pv-body">
-                                <h2>Starter Plan</h2>
-                                <div class="listview">
-                                        <a class="lv-item" href="">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <div class="lv-title" style="text-align:left;">Feature 1</div>
-                                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="lv-item" href="">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <div class="lv-title" style="text-align:left;">Feature 2</div>
-                                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="lv-item" href="">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <div class="lv-title" style="text-align:left;">Feature 3</div>
-                                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="lv-item" href="">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <div class="lv-title" style="text-align:left;">Feature 4</div>
-                                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="lv-item" href="">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <div class="lv-title" style="text-align:left;">Feature 1</div>
-                                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    <br>
-                                    <br>
-                                    </div>
-                                <a href="./purchase.html" class="pv-follow-btn" style="background:#55b070;">Select Plan</a>
+               <div class="col-sm-4">
+                  <!--Starter -->
+                  <div class="card profile-view">
+                     <div class="pv-header" style="background:#7cdfa9;">
+                        <img src="img/plans/starter.png" class="pv-main" alt="">
+                     </div>
+                     <div class="pv-body">
+                        <h2 style="
+                           background: #e5fae9;
+                           padding-top: 20px;
+                           padding-bottom: 20px;
+                           width: 108.5%;
+                           margin-left: -20px;
+                           /* height: 85%; */
+                           line-height: 400%;
+                           margin-top: -15%;
+                           color: #92b597;
+                           font-family:  'Montserrat', sans-serif;
+                           ">1 BTC</h2>
+                        <div class="listview">
+                           <a class="lv-item" href="">
+                              <div class="media">
+                                 <div class="media-body">
+                                    <div class="lv-title" style="text-align:left;">Feature 1</div>
+                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="lv-item" href="">
+                              <div class="media">
+                                 <div class="media-body">
+                                    <div class="lv-title" style="text-align:left;">Feature 2</div>
+                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="lv-item" href="">
+                              <div class="media">
+                                 <div class="media-body">
+                                    <div class="lv-title" style="text-align:left;">Feature 3</div>
+                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="lv-item" href="">
+                              <div class="media">
+                                 <div class="media-body">
+                                    <div class="lv-title" style="text-align:left;">Feature 4</div>
+                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="lv-item" href="">
+                              <div class="media">
+                                 <div class="media-body">
+                                    <div class="lv-title" style="text-align:left;">Feature 1</div>
+                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
+                                 </div>
+                              </div>
+                           </a>
+                           <br>
+                           <br>
                         </div>
-                    </div>                  
-                </div>
-                <div class="col-sm-4">                                              
-                     <!--Pro User -->
-                        <div class="card profile-view">
-                            <div class="pv-header" style="background:#df565e;">
-                                <img src="img/plans/pro.png" class="pv-main" alt="">
-                            </div>
-                            
-                            <div class="pv-body">
-                                <h2>Pro Plan</h2>
-                                <div class="listview">
-                                        <a class="lv-item" href="">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <div class="lv-title" style="text-align:left;">Feature 1</div>
-                                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="lv-item" href="">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <div class="lv-title" style="text-align:left;">Feature 2</div>
-                                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="lv-item" href="">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <div class="lv-title" style="text-align:left;">Feature 3</div>
-                                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="lv-item" href="">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <div class="lv-title" style="text-align:left;">Feature 4</div>
-                                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="lv-item" href="">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <div class="lv-title" style="text-align:left;">Feature 1</div>
-                                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    <br>
-                                    <br>
-                                    </div>
-                                
-                                <a href="./purchase.html" class="pv-follow-btn" style="background:#df565e;">Select Plan</a>
+                        <a href="./purchase.html" class="pv-follow-btn" style="background:#7cdfa9; font-family: 'Montserrat', sans-serif;">Select Plan</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-4">
+                  <!--Pro User -->
+                  <div class="card profile-view">
+                     <div class="pv-header" style="background:#bd9de6;">
+                        <img src="img/plans/pro.png" class="pv-main" alt="">
+                     </div>
+                     <div class="pv-body">
+                        <h2 style="
+                           background: #efe6fb;
+                           padding-top: 20px;
+                           padding-bottom: 20px;
+                           width: 108.5%;
+                           margin-left: -20px;
+                           /* height: 85%; */
+                           line-height: 400%;
+                           margin-top: -15%;
+                           color: #9d8db2;
+                           font-family:  'Montserrat', sans-serif;
+                           ">2 BTC</h2>
+                        <div class="listview">
+                           <a class="lv-item" href="">
+                              <div class="media">
+                                 <div class="media-body">
+                                    <div class="lv-title" style="text-align:left;">Feature 1</div>
+                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="lv-item" href="">
+                              <div class="media">
+                                 <div class="media-body">
+                                    <div class="lv-title" style="text-align:left;">Feature 2</div>
+                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="lv-item" href="">
+                              <div class="media">
+                                 <div class="media-body">
+                                    <div class="lv-title" style="text-align:left;">Feature 3</div>
+                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="lv-item" href="">
+                              <div class="media">
+                                 <div class="media-body">
+                                    <div class="lv-title" style="text-align:left;">Feature 4</div>
+                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="lv-item" href="">
+                              <div class="media">
+                                 <div class="media-body">
+                                    <div class="lv-title" style="text-align:left;">Feature 1</div>
+                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
+                                 </div>
+                              </div>
+                           </a>
+                           <br>
+                           <br>
                         </div>
-                    </div>                  
-                </div>
-                <div class="col-sm-4">                                              
-                     <!--Ultra -->
-                        <div class="card profile-view">
-                            <div class="pv-header" style="background:#5abbb5;">
-                                <img src="img/plans/expert.png" class="pv-main" alt="">
-                            </div>
-                            
-                            <div class="pv-body">
-                                <h2>Expert Plan</h2>
-                                <div class="listview">
-                                        <a class="lv-item" href="">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <div class="lv-title" style="text-align:left;">Feature 1</div>
-                                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="lv-item" href="">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <div class="lv-title" style="text-align:left;">Feature 2</div>
-                                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="lv-item" href="">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <div class="lv-title" style="text-align:left;">Feature 3</div>
-                                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="lv-item" href="">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <div class="lv-title" style="text-align:left;">Feature 4</div>
-                                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="lv-item" href="">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <div class="lv-title" style="text-align:left;">Feature 1</div>
-                                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    <br>
-                                    <br>
-                                    </div>
-                                
-                                <a href="./purchase.html" class="pv-follow-btn" style="background:#5abbb5;">Select Plan</a>
+                        <a href="./purchase.html" class="pv-follow-btn" style="background:#bd9de6; font-family: 'Montserrat', sans-serif;">Select Plan</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-4">
+                  <!--Ultra -->
+                  <div class="card profile-view">
+                     <div class="pv-header" style="background:#6dc7fb;">
+                        <img src="img/plans/expert.png" class="pv-main" alt="">
+                     </div>
+                     <div class="pv-body">
+                        <h2 style="
+                           background: #e5f7fb;
+                           padding-top: 20px;
+                           padding-bottom: 20px;
+                           width: 108.5%;
+                           margin-left: -20px;
+                           /* height: 85%; */
+                           line-height: 400%;
+                           margin-top: -15%;
+                           color: #63accd;
+                           font-family:  'Montserrat', sans-serif;
+                           font-weight:500;
+                           ">3 BTC</h2>
+                        <div class="listview">
+                           <a class="lv-item" href="">
+                              <div class="media">
+                                 <div class="media-body">
+                                    <div class="lv-title" style="text-align:left;">Feature 1</div>
+                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="lv-item" href="">
+                              <div class="media">
+                                 <div class="media-body">
+                                    <div class="lv-title" style="text-align:left;">Feature 2</div>
+                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="lv-item" href="">
+                              <div class="media">
+                                 <div class="media-body">
+                                    <div class="lv-title" style="text-align:left;">Feature 3</div>
+                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="lv-item" href="">
+                              <div class="media">
+                                 <div class="media-body">
+                                    <div class="lv-title" style="text-align:left;">Feature 4</div>
+                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="lv-item" href="">
+                              <div class="media">
+                                 <div class="media-body">
+                                    <div class="lv-title" style="text-align:left;">Feature 1</div>
+                                    <small class="lv-small" style="text-align:left;">Something about this great feature here.</small>
+                                 </div>
+                              </div>
+                           </a>
+                           <br>
+                           <br>
                         </div>
-                    </div>                  
-                </div>
+                        <a href="./purchase.html" class="pv-follow-btn" style="background:#6dc7fb; font-family: 'Montserrat', sans-serif;">Select Plan</a>
+                     </div>
+                  </div>
+               </div>
             </div>
          </section>
       </section>
