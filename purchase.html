@@ -114,12 +114,12 @@
                         </div>
                   <ul class="main-menu">
                      <li><a href="index.html"><i class="md md-dashboard"></i> Dashboard</a></li>
-                     <li class="active"><a href="create.html"><i class="md md-blur-on"></i> Create Contract</a></li>
+                     <li><a href="create.html"><i class="md md-blur-on"></i> Create Contract</a></li>
                      <li><a href="my-contracts.html"><i class="md md-receipt"></i>My Contracts</a></li>
                      <li><a href="transactions.html"><i class="md md-settings-ethernet"></i>Transactions</a></li>
                      <li><a href="sandbox.html"><i class="md md-settings-applications"></i>Sandbox</a></li>
                      <li><a href="pricing.html"><i class="md md-tonality"></i>Pricing</a></li>
-                     <li><a href="purchase.html"><i class="md md-shopping-basket"></i>Purchase</a></li>
+                     <li class="active"><a href="purchase.html"><i class="md md-shopping-basket"></i>Purchase</a></li>
                   </ul>
                </div>
             </div>
@@ -225,38 +225,20 @@
             <div class="container">
                <div class="card">
                   <div class="card-header">
-                     <h2>Create Contracts <small>With this easy-to-use wizard you can easily create smart contracts without all the hassle</small></h2>
+                     <h2>Purchase <small>You can easily purchase Etherparty and scale it to your needs.</small></h2>
                   </div>
                   <div class="card-body card-padding">
                      <div class="form-wizard-basic fw-container">
                         <ul class="tab-nav text-center fw-nav" tabindex="11" style="overflow: hidden; outline: none;">
-                           <li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="true">Create</a></li>
-                           <li><a href="#tab2" data-toggle="tab">Details</a></li>
-                           <li><a href="#tab3" data-toggle="tab">Publish</a></li>
-                           <li><a href="#tab4" data-toggle="tab">Finish</a></li>
+                           <li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="true">Purchase Details</a></li>
+                           <li><a href="#tab4" data-toggle="tab">Order Complete</a></li>
                         </ul>
                         <div class="tab-content">
                            <div class="tab-pane fade active in" id="tab1">
                               <div class="col-sm-6">
-                                 <p class="c-black f-500 m-b-20">Select a Plan</p>
-                                 <div class="form-group">
-                                    <div class="fg-line">
-                                       <div class="select">
-                                          <select class="form-control">
-                                             <option>Select a Plan</option>
-                                             <option>Starter</option>
-                                             <option>Pro</option>
-                                             <option>Expert</option>
-                                          </select>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <br>
-                              <br>
-                              <div class="row">
-                                 <div class="col-sm-6">
-                                    <div class="input-group">
+                                 
+                                  
+                                  <div class="input-group">
                                        <span class="input-group-addon"><i class="md md-person"></i></span>
                                        <div class="fg-line">
                                           <input type="text" class="form-control" placeholder="Full Name">
@@ -283,134 +265,41 @@
                                           <input type="text" class="form-control" placeholder="Other Contact">
                                        </div>
                                     </div>
+                                  <br>
+                                  
+                              </div>
+                              <br>
+                              <br>
+                              <div class="row">                                 
+                                 <div class="col-sm-6">                                     
+                                     <p class="c-black f-500 m-b-20" style="font-family: 'Montserrat', sans-serif;">Select a Plan</p>
+                                 <div class="form-group">
+                                    <div class="fg-line">
+                                       <div class="select">
+                                          <select class="form-control">
+                                             <option>Select a Plan</option>
+                                             <option>Starter</option>
+                                             <option>Pro</option>
+                                             <option>Expert</option>
+                                          </select>
+                                       </div>
+                                    </div>
                                  </div>
-                                 <div class="col-sm-6">
-                                    <div class="input-group">
-                                       <div class="fg-line">
-                                          <input type="text" class="form-control" placeholder="Work">
-                                       </div>
-                                       <span class="input-group-addon last"><i class="md md-data-usage"></i></span>
-                                    </div>
-                                    <br>
-                                    <div class="input-group">
-                                       <div class="fg-line">
-                                          <input type="text" class="form-control" placeholder="Variables">
-                                       </div>
-                                       <span class="input-group-addon last"><i class="md md-select-all"></i></span>
-                                    </div>
-                                    <br>
-                                    <div class="input-group">
-                                       <div class="fg-line">
-                                          <input type="text" class="form-control" placeholder="Reputation">
-                                       </div>
-                                       <span class="input-group-addon last"><i class="md md-account-box"></i></span>
-                                    </div>
-                                    <br>
-                                    <div class="input-group">
-                                       <div class="fg-line">    
-                                          <input type="text" class="form-control" placeholder="Completion Date">
-                                       </div>
-                                       <span class="input-group-addon last"><i class="md md-my-location"></i></span>
-                                    </div>
+                                     
+                                     <br>
+                                     
+                                    <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                <i class="input-helper"></i>
+                                                I acccept that once these details are entered, they cannot be changed.
+                                            </label>
+                                        </div>
                                  </div>
                               </div>
                            </div>
-                           <div class="tab-pane fade" id="tab2">
-                              <div class="form-group has-success has-feedback">
-                                 <label class="control-label" for="inputSuccess2">Amount</label>
-                                 <div class="fg-line">
-                                    <input type="text" class="form-control" id="inputSuccess2">
-                                 </div>
-                              </div>
-                              <div class="form-group has-warning has-feedback">
-                                 <label class="control-label" for="inputWarning2">Fees</label>
-                                 <div class="fg-line">
-                                    <input type="text" class="form-control" id="inputWarning2">
-                                 </div>
-                              </div>
-                              <div class="form-group has-error has-feedback">
-                                 <label class="control-label" for="inputError2">Variables</label>
-                                 <div class="fg-line">
-                                    <input type="text" class="form-control" id="inputError2">
-                                 </div>
-                              </div>
-                              <br>
-                              <div class="has-success">
-                                 <div class="checkbox">
-                                    <label>
-                                    <input type="checkbox" value="">
-                                    <i class="input-helper"></i>
-                                    v2.5 Contract
-                                    </label>
-                                 </div>
-                              </div>
-                              <div class="has-error">
-                                 <div class="checkbox">
-                                    <label>
-                                    <input type="checkbox" value="">
-                                    <i class="input-helper"></i>
-                                    v1 Contract
-                                    </label>
-                                 </div>
-                              </div>
-                              <br>
-                              <hr>
-                              <br>
-                              <div class="row">
-                                 <div class="col-sm-4 m-b-20">
-                                    <div class="toggle-switch" data-ts-color="red">
-                                       <label for="ts2" class="ts-label">Node 1</label>
-                                       <input id="ts2" type="checkbox" hidden="hidden">
-                                       <label for="ts2" class="ts-helper"></label>
-                                    </div>
-                                 </div>
-                                 <div class="col-sm-4 m-b-20">
-                                    <div class="toggle-switch" data-ts-color="blue">
-                                       <label for="ts3" class="ts-label">Node 2</label>
-                                       <input id="ts3" type="checkbox" hidden="hidden">
-                                       <label for="ts3" class="ts-helper"></label>
-                                    </div>
-                                 </div>
-                                 <div class="col-sm-4 m-b-20">
-                                    <div class="toggle-switch" data-ts-color="green">
-                                       <label for="ts4" class="ts-label">Node 3</label>
-                                       <input id="ts4" type="checkbox" hidden="hidden">
-                                       <label for="ts4" class="ts-helper"></label>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="tab-pane fade" id="tab3">
-                              <p>Duis eu eros vitae risus sollicitudin blandit in non nisi. Phasellus rhoncus ullamcorper pretium. Etiam et viverra neque, aliquam imperdiet velit. Nam a scelerisque justo, id tristique diam. Aenean ut vestibulum velit, vel ornare augue. Nullam eu est malesuada, vehicula ex in, maximus massa. Sed sit amet massa venenatis, tristique orci sed, eleifend arcu.</p>
-                              <p>Aliquam tempus rutrum neque, a blandit dui. Proin quis elit non est scelerisque pharetra nec id libero. Quisque id tincidunt elit. Maecenas non mauris malesuada, interdum justo et, ullamcorper magna. Nulla libero risus, vestibulum pharetra eleifend in, aliquam ac odio. Sed ligula orci, rhoncus sit amet ipsum vel, vehicula interdum ligula. </p>
-                              <p>Duis eu eros vitae risus sollicitudin blandit in non nisi. Phasellus rhoncus ullamcorper pretium. Etiam et viverra neque, aliquam imperdiet velit. Nam a scelerisque justo, id tristique diam. Aenean ut vestibulum velit, vel ornare augue. Nullam eu est malesuada, vehicula ex in, maximus massa. Sed sit amet massa venenatis, tristique orci sed, eleifend arcu.</p>
-                              <p>Aliquam tempus rutrum neque, a blandit dui. Proin quis elit non est scelerisque pharetra nec id libero. Quisque id tincidunt elit. Maecenas non mauris malesuada, interdum justo et, ullamcorper magna. Nulla libero risus, vestibulum pharetra eleifend in, aliquam ac odio. Sed ligula orci, rhoncus sit amet ipsum vel, vehicula interdum ligula. </p>
-                              <p>Duis eu eros vitae risus sollicitudin blandit in non nisi. Phasellus rhoncus ullamcorper pretium. Etiam et viverra neque, aliquam imperdiet velit. Nam a scelerisque justo, id tristique diam. Aenean ut vestibulum velit, vel ornare augue. Nullam eu est malesuada, vehicula ex in, maximus massa. Sed sit amet massa venenatis, tristique orci sed, eleifend arcu.</p>
-                              <p>Aliquam tempus rutrum neque, a blandit dui. Proin quis elit non est scelerisque pharetra nec id libero. Quisque id tincidunt elit. Maecenas non mauris malesuada, interdum justo et, ullamcorper magna. Nulla libero risus, vestibulum pharetra eleifend in, aliquam ac odio. Sed ligula orci, rhoncus sit amet ipsum vel, vehicula interdum ligula. </p>
-                              <br>
-                              <hr>
-                              <br>
-                              <div class="has-success">
-                                 <div class="checkbox">
-                                    <label>
-                                    <input type="checkbox" value="">
-                                    <i class="input-helper"></i>
-                                    I accept these terms &amp; conditions
-                                    </label>
-                                 </div>
-                              </div>
-                              <div class="has-error">
-                                 <div class="checkbox">
-                                    <label>
-                                    <input type="checkbox" value="">
-                                    <i class="input-helper"></i>
-                                    I don't accept these terms &amp; conditions
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="tab-pane fade" id="tab4" style="background:#fbc66a;">
-                              <center> <img src="img/complete.png" alt="Smart Contract Created"></center>
+                           <div class="tab-pane fade" id="tab4">
+                              <center> <img src="img/plans/order-complete.png" alt="Your order is now complete!"></center>
                            </div>
                            <ul class="fw-footer pagination wizard">
                               <li class="previous first disabled"><a class="a-prevent" href=""><i class="md md-more-horiz"></i></a></li>
